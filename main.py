@@ -17,7 +17,7 @@ cloudinary.config(
 @app.route('/')
 def home():
     return jsonify({'msg':'hello world'})
-@app.route('/predict', methods=['GET'])
+@app.route('/predict', methods=['POST'])
 def upload_image():
     if 'file' not in request.files:
         app.logger.error('No file part in request.files')
