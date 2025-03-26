@@ -1,0 +1,4 @@
+flask
+cloudinary
+dotenv
+requests
